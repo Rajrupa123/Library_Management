@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/issue_book_record.css">
+</head>
+<body>
+    
+    <div class="buttons">
+        <button><a href="/admin/admin_details">Admin</a></button>
+        <button><a href="/book/add_book">Add Book</a></button>
+        <button><a href="/book/book_details">Book Details</a></button>
+        <button><a href="/book/book_record">Book Record</a></button>
+        <button><a href="/issue/issue_book">Issue Book</a></button>
+        <button><a href="/issue/issue_book_record">Issue Report</a></button>
+        <button><a href="/admin/sign-out">Logout</a></button>
+
+    </div>
+    <table>
+        <h2>Issue Book Record</h2>
+        <tr>
+            
+            <th>book name</th>
+            <th>student name</th>
+            <th>date of issue</th>
+            <th>date of return</th>
+           
+        
+        </tr>
+        
+        <%for(let i of issue_book){%>
+            <tr>
+               
+                <td><%=i.book_name%></td>
+                <td><%=i.student_name%></td>
+                <td><%=i.doi%></td>
+               <td><%=i.dor%></td>
+    
+            </tr>
+           <%}%>
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url(../Images/R\ \(1\).jfif);
+    /*background-image: linear-gradient(125deg, black, navy);*/
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    position: relative;
+    top: -1vh;
+    /*background-color: indigo;*/
+    /*background-image: linear-gradient(115deg,#691369,#0a0a81);
+    background: radial-gradient(255,255,255,0.2);*/
+    /* background: rgb(69 39 160); */
+    height: 101vh;
+    border-radius: 5px;
+    background: linear-gradient(45deg, black, transparent);
+    left: -1%;
+}
+button{
+    margin:2vh;
+    border-radius: 20px;
+    height: 7vh;
+    border: none;
+}
+h2{
+    /* position: absolute; */
+    top: -87vh;
+    left: 53%;
+    color: black;
+}
+.book-details{
+    border: 2px solid;
+    position: relative;
+    top: -95vh;
+    width: 61%;
+    left: 28%;
+    background-color: white;
+    height: 62vh;
+}
+.book-details img{
+   width: 18%;
+   height: 27vh;
+   position: relative;
+   top: 11vh;
+   left: 3%;
+}
+.main-details{
+    position: relative;
+    top: -156vh;
+    left: 46%;
+    font-size: 4vh;
+    font-family: sans-serif;
+}

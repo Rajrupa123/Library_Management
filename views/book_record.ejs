@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/book_record.css">
+</head>
+<body>
+
+    <form action="/book/search" method="GET">
+        <input type="text" name="q" placeholder="Search by book name" value="<%= query %>">
+        <button type="submit">Search</button>
+      </form>
+  
+
+    <main>
+        
+        <div class="buttons">
+            <button><a href="/admin/admin_details">Admin</a></button>
+            <button><a href="/book/add_book">Add Book</a></button>
+            <button><a href="/book/book_details">Book Details</a></button>
+            <button><a href="/book/book_record">Book Record</a></button>
+            <button><a href="/issue/issue_book">Issue Book</a></button>
+            <button><a href="/issue/issue_book_record">Issue Report</a></button>
+            <button><a href="/admin/sign-out">Logout</a></button>
+    
+        </div>
+        <h2>Book Record</h2>
+        <table>
+            <tr>
+              
+                <th >Book Name</th>
+                <th>Author</th>
+                <th>Book Publisher</th>
+                <th>Book Price</th>
+                <th>Delete</th>
+                <th>Details</th>
+               
+            </tr>
+            <% for(let i of books){%>
+
+               <tr>
+                 
+                   <td><%=i.book_name%></td>
+                   <td><%=i.book_author%></td>
+                   <td><%=i.book_publisher%></td>
+                   <td><%=i.book_price%></td>
+                   <td><a href="/delete_contact/?id=<%=i.id%>">Delete</a></td>
+                   <td>view</td>
+               </tr>
+
+            <% } %>
+
+        </table>
+       </main>
+</body>
+</html>
+

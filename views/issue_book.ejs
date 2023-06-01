@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/issue_book.css">
+</head>
+
+<body>
+   
+    <div class="buttons">
+        <button><a href="/admin/admin_details">Admin</a></button>
+        <button><a href="/book/add_book">Add Book</a></button>
+        <button><a href="/book/book_details">Book Details</a></button>
+        <button><a href="/book/book_record">Book Record</a></button>
+        <button><a href="/issue/issue_book">Issue Book</a></button>
+        <button><a href="/issue/issue_book_record">Issue Report</a></button>
+        <button><a href="/admin/sign-out">Logout</a></button>
+
+    </div>
+    <h2>Issue Book</h2>
+    <form action="/issue/create" method="POST">
+       
+        <label for="">Choose book
+            <input type="text" name="book_name" required>
+        </label>
+        <label for="">Student Name
+            <input type="input" name="student_name" required>
+        </label>
+        <label for="">Date of Issue
+            <input type="date" name="doi" required>
+        </label>
+        <label for="">Date of Return
+            <input type="date" name="dor" required>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

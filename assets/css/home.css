@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: black;
+    color: white;
+    height: 12vh;
+}
+body{
+    background-image: url(../Images/lib3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-blend-mode: darken;
+}
+main h1{
+    color: #e8eaf6;
+    position: relative;
+    top: 36vh;
+    left: 23%;
+    font-size: 7vh;
+}
+#student-login{
+
+position: relative;
+
+top: 54vh;
+
+left: -1%;
+
+width: 17%;
+
+height: 7vh;
+
+background-color: #6a1b9a;
+
+color: white;
+}
+
+
+#admin-login{
+    
+position: relative;
+    
+top: 54vh;
+    
+left: 12%;
+    
+background-color: #1565c0;
+    
+color: white;
+    
+width: 17%;
+    
+height: 7vh;
+}
+#head{
+    position: relative;
+    left: 36%;
+    top: 30vh;
+    width: 27%;
+    height: 12vh;
+    border-radius: 42px;
+}
+#login{
+    
+position: relative;
+    
+top: 3vh;
+    
+/* left: 43%; */
+    
+display: flex;
+    
+justify-content: flex-end;
+    
+/* margin-top: 0vh; */
+}
+label{
+    position: relative;
+    top: 3vh;
+    left: -1%;
+
+}
+button#admin-login a {
+    color: white;
+    text-decoration: none;
+}

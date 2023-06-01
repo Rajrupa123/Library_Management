@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/admin_add_book.css">
+</head>
+<body>
+ 
+  <main>
+    <div class="buttons">
+        <button><a href="/admin/admin_details">Admin</a></button>
+        <button><a href="/book/add_book">Add Book</a></button>
+        <button><a href="/book/book_details">Book Details</a></button>
+        <button><a href="/book/book_record">Book Record</a></button>
+        <button><a href="/issue/issue_book">Issue Book</a></button>
+        <button><a href="/issue/issue_book_record">Issue Report</a></button>
+        <button><a href="/admin/sign-out">Logout</a></button>
+
+    </div>
+    
+    <form action="/book/create" method="POST">
+        <h2>Add New Book</h2>
+       
+        <label for="book_name">Book Name
+            <input type="text" name="book_name" id="book_name">
+        </label>
+        <label for="book_author">Author
+            <input type="text" name="book_author" id="book_author">
+        </label>
+        <label for="book_publisher">Book Publisher
+            <input type="text" name="book_publisher" id="book_publisher">
+        </label>
+        <label for="book_price">Book Price
+            <input type="text" name="book_price" id="book_price">
+        </label>
+      
+        <button type="submit">Submit</button>
+    </form>
+</main>
+    
+</body>
+</html>

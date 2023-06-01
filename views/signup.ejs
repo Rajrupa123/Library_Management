@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/admin_signup.css">
+</head>
+<body>
+   
+    <main>
+        <div class="signup">
+            
+            <div class="admin-signup">
+                <form action="/admin/create" method="POST">
+                    <h2>Admin Signup</h2>
+                    <input type="text" name="name" id="name" placeholder="Enter name">
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <input type="password" name="password" id="password" placeholder="Enter password">
+                    <input type="text" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+                    <button type="submit">Submit</button>
+                    <button id="login"><a href="/admin/login">Login</a></button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

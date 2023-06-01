@@ -1,0 +1,57 @@
+body{
+    background-color: #6427d1;
+}
+.login{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    top: 20vh;
+    height: 50vh;
+    width: 89%;
+    left: 6%;
+    flex-direction: row;
+}
+
+.student-login {
+        border: 2px solid;
+        /* display: flex; */
+        background-color: white;
+        position: relative;
+        left: 25%;
+        border-radius: 34px;
+        width: 51%;
+    }
+.admin-login{
+    border: 2px solid;
+    background-color: #107cd2;
+}
+form input{
+    text-align: center;
+    width: 48%;
+    margin: 2%;
+    position: relative;
+    left: 22%;
+    border-radius: 17px;
+    height: 5vh;
+}
+button {
+    position: relative;
+    top: 7vh;
+    width: 28%;
+    left: -32vh;
+}
+h2{
+    text-align: center;
+}
+
+    #signup {
+        position: relative;
+        left: 56vh;
+        top: 0vh;
+        /* text-decoration: none; */
+    }
+
+    #signup a{
+        text-decoration: none;
+        color :black;
+    }
