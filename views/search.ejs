@@ -1,38 +1,64 @@
+<!-- search.ejs -->
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Search Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:blueviolet;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Search Results</h1>
-  
-  <!-- Search form -->
-  <form action="/book/search" method="GET">
-    <input type="text" name="q" placeholder="Search by book name" value="<%= query %>">
-    <button type="submit">Search</button>
-  </form>
+  <div class="container">
+    <h1>Search Results</h1>
+    <form action="/book/search" method="GET">
+      <input type="text" name="q" placeholder="Search by book name">
+      <button type="submit">Search</button>
+    </form>
+    <p>Search query: <%= query %></p>
 
-  <% if (books.length > 0) { %>
-    <table>
-      <tr>
-        <th>Book Name</th>
-        <th>Author</th>
-        <th>Publisher</th>
-        <th>Price</th>
-      </tr>
-      <% books.forEach(function(book) { %>
-        <tr>
-          <td><%= book.book_name %></td>
-          <td><%= book.book_author %></td>
-          <td><%= book.book_publisher %></td>
-          <td><%= book.book_price %></td>
-        </tr>
-      <% }); %>
-    </table>
-  <% } else { %>
-    <p>No results found.</p>
-  <% } %>
-  
-  <a href="/book/book_record">Back to Book Record</a>
+    <% if (books.length > 0) { %>
+      <ul>
+        <% books.forEach(function(book) { %>
+          <li>
+            <strong>Book Id:</strong><%=book.book_id%><br>
+            <strong>Book Name:</strong> <%= book.book_name %><br>
+            <strong>Author:</strong> <%= book.book_author %><br>
+            <strong>Book Publisher:</strong> <%= book.book_publisher %><br>
+            <strong>Book Price:</strong> <%= book.book_price %>
+          </li>
+        <% }); %>
+      </ul>
+    <% } else { %>
+      <p>No results found.</p>
+    <% } %>
+  </div>
 </body>
 </html>

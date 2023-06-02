@@ -11,7 +11,7 @@
 
     <form action="/book/search" method="GET">
         <input type="text" name="q" placeholder="Search by book name" value="<%= query %>">
-        <button type="submit">Search</button>
+        <button type="submit" id="searchButton">Search</button>
       </form>
   
 
@@ -30,7 +30,7 @@
         <h2>Book Record</h2>
         <table>
             <tr>
-              
+                <th>Book ID</th>
                 <th >Book Name</th>
                 <th>Author</th>
                 <th>Book Publisher</th>
@@ -42,7 +42,7 @@
             <% for(let i of books){%>
 
                <tr>
-                 
+                <td><%= i.book_id %></td>
                    <td><%=i.book_name%></td>
                    <td><%=i.book_author%></td>
                    <td><%=i.book_publisher%></td>
