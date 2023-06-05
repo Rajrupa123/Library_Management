@@ -47,8 +47,11 @@
                    <td><%=i.book_author%></td>
                    <td><%=i.book_publisher%></td>
                    <td><%=i.book_price%></td>
-                   <td><a href="/delete_contact/?id=<%=i.id%>">Delete</a></td>
-                   <td>view</td>
+                   <td><a href="/delete_book/?id=<%=i.id%>">Delete</a></td>
+                   <td><a href="/book/book_details/<%= i.book_id %>">Details</a></td>
+
+
+
                </tr>
 
             <% } %>

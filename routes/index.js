@@ -5,7 +5,7 @@ const bookController=require("../controller/bookController");
 
 
 router.get("/",homeController.home);
-router.get("/delete_contact",bookController.delete_contact);
+router.get("/delete_book",bookController.delete_book);
 router.use("/admin",require("./admin"));
 router.use("/book",require("./book"));
 router.use("/issue",require("./issues"));

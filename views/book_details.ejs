@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Book Details</title>
     <link rel="stylesheet" href="/css/book_details.css">
 </head>
 <body>
-  
-    
-
-      <div class="buttons">
+    <div class="buttons">
         <button><a href="/admin/admin_details">Admin</a></button>
         <button><a href="/book/add_book">Add Book</a></button>
         <button><a href="/book/book_details">Book Details</a></button>
@@ -19,17 +16,18 @@
         <button><a href="/issue/issue_book">Issue Book</a></button>
         <button><a href="/issue/issue_book_record">Issue Report</a></button>
         <button><a href="/admin/sign-out">Logout</a></button>
-
     </div>
     
     <div class="book-details">
-
-        <img src="./Images/OIP.jfif" alt="">      
+        <img src="/images/<%= book.image %>" alt="<%= book.name %>">
     </div>
+    
     <div class="main-details">
         <h2>Book Details</h2>
-     
-      </div>
-
+        <p><strong>Book Name:</strong> <%= book.book_name %></p>
+        <p><strong>Author:</strong> <%= book.book_author %></p>
+        <p><strong>Publisher:</strong> <%= book.book_publisher %></p>
+        <!-- Add more book details here -->
+    </div>
 </body>
 </html>

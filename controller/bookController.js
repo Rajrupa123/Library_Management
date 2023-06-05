@@ -53,7 +53,21 @@ module.exports.search = function(req, res) {
 };
 
 module.exports.details_book = function(req, res) {
-  return res.render("book_details");
+  const bookId = req.params.book_id; // Get the bookId from the URL parameter
+
+  Book.findOne({ book_id: bookId }, function(err, book) {
+    if (err) {
+      console.log("Error while finding book:", err);
+      return res.status(500).send("Internal Server Error");
+    }
+
+    if (!book) {
+      console.log("Book not found");
+      return res.status(404).send("Book not found");
+    }
+
+    return res.render("book_details", { book: book });
+  });
 };
 
 module.exports.create = function(req, res) {
@@ -86,7 +100,7 @@ module.exports.create = function(req, res) {
   });
 };
 
-module.exports.delete_contact = function(req, res) {
+module.exports.delete_book = function(req, res) {
   let id = req.query.id;
   Book.findByIdAndDelete(id, function(err) {
     if (err) {

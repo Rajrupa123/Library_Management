@@ -30,7 +30,7 @@ button{
     top: -84vh;
     width: 50%;
     left: 30%;
-    height: 48vh;
+    height:auto  b;
 }
 h1{
     text-align: center;
@@ -46,5 +46,5 @@ img {
 p {
     position: relative;
     left: 39%;
-    top: -21vh;
+    top: -2vh;
 }

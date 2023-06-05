@@ -1,5 +1,7 @@
 const Admin=require("../models/adminSchema");
 const db=require("../config/mongoose")
+const passport = require("passport");
+
 
 module.exports.signup=function(req,res) {
     res.render("signup")
@@ -56,17 +58,35 @@ module.exports.createSession=function(req,res) {
     })
 }*/
 
-module.exports.createSession=function(req,res) {
-    
-    return res.redirect("/admin/admin_details")
- }
+module.exports.createSession = function (req, res, next) {
+    passport.authenticate("local", function (err, admin, info) {
+      if (err) {
+        console.log("Error in finding the user while signing in");
+        return next(err);
+      }
+      if (!admin || admin.email !== req.body.email) {
+        return res.redirect("/admin/login");
+      }
+      req.logIn(admin, function (err) {
+        if (err) {
+          console.log("Error in logging in the user");
+          return next(err);
+        }
+        return res.redirect("/admin/admin_details");
+      });
+    })(req, res, next);
+  };
+  
  
- module.exports.destroySession=function(req,res,next) {
-     req.logout(function(err) {
-         if (err) {
-           return next(err);
-         }
-         res.redirect("/");
-       });
- }
- 
+
+  module.exports.destroySession = function(req, res){
+    req.logout(function(err) { // Add a callback function here
+        if(err){
+            console.log('Error in destroying session', err);
+            return;
+        }
+        return res.redirect('/');
+    });
+}
+
+  

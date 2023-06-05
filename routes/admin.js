@@ -5,12 +5,12 @@ const adminController=require("../controller/adminController");
 
 router.get("/signup",adminController.signup);
 router.get("/login",adminController.login);
-router.get("/admin_details",adminController.admin_details);
+router.get("/admin_details",passport.checkAuthentication,adminController.admin_details);
 
 router.post("/create",adminController.create)
 router.post("/create-session",passport.authenticate(
     "local",
-    {failureRedirect: '/user/login'},
+    { failureRedirect: '/admin/login' },
     ),adminController.createSession);
     
 router.get('/sign-out', adminController.destroySession);
