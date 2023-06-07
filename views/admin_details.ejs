@@ -22,9 +22,15 @@
     <div class="box">
         <h1>Admin Details</h1>
         <!--<img src="<%= '/Images/profile.png' %>" alt="profile image">-->
-        <% for(let i = 0; i < admin.length; i++) { %>
-            <p><%= admin[i].name %></p>
-        <% } %>
+       
+        
+            <% for(let i = 0; i < admin.length; i++) { %>
+               <div class="small-div">
+                <p><%= admin[i].name %></p>
+                <img src="<%= '/Images/profile.png' %>" alt="profile image">
+               </div>
+            <% } %>
+        
     </div>
 </body>
 </html>

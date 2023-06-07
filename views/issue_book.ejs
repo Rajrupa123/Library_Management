@@ -36,8 +36,12 @@
         <label for="">Date of Return
             <input type="date" name="dor" required>
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="doneissue()">Submit</button>
     </form>
 </body>
-
+<script>
+    function doneissue() {
+  alert("Book Issued sucessfully!");
+}
+</script>
 </html>

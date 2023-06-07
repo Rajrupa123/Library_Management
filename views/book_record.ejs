@@ -28,6 +28,7 @@
     
         </div>
         <h2>Book Record</h2>
+      
         <table>
             <tr>
                 <th>Book ID</th>
@@ -47,7 +48,8 @@
                    <td><%=i.book_author%></td>
                    <td><%=i.book_publisher%></td>
                    <td><%=i.book_price%></td>
-                   <td><a href="/delete_book/?id=<%=i.id%>">Delete</a></td>
+                   <td><a href="/delete_book/?id=<%=i.id%>" onclick="return myDeleteFunction()">Delete</a></td>
+                   a></td>
                    <td><a href="/book/book_details/<%= i.book_id %>">Details</a></td>
 
 
@@ -57,7 +59,17 @@
             <% } %>
 
         </table>
+      
        </main>
 </body>
+
+   <script>
+    function myDeleteFunction() {
+        var result = confirm("Do you still want to delete?");
+        return result;
+    }
+</script>
+
+
 </html>
 

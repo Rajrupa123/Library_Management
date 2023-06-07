@@ -35,23 +35,17 @@ h2{
 .book-details{
     border: 2px solid;
     position: relative;
-    top: -95vh;
-    width: 61%;
+    top: -99vh;
+    width: 49%;
     left: 28%;
     background-color: white;
-    height: 62vh;
+    height: 52vh;
 }
-.book-details img{
-   width: 18%;
-   height: 27vh;
-   position: relative;
-   top: 11vh;
-   left: 3%;
-}
+
 .main-details{
     position: relative;
-    top: -156vh;
-    left: 46%;
-    font-size: 4vh;
+    top: -148vh;
+    left: 40%;
+    font-size: 3vh;
     font-family: sans-serif;
 }
