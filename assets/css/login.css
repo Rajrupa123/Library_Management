@@ -55,3 +55,37 @@ h2{
         text-decoration: none;
         color :black;
     }
+    @media only screen and (max-width: 767px) {
+        /* CSS rules for mobile devices */
+        .student-login{
+            width: 77%;
+            left: 8%;
+        }
+        #signup {
+            left: 36%;
+            top: 25vh;
+        }
+        button{
+            top: 25vh;
+            left: -18%;
+        }
+    }
+     @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        /* CSS rules for tablets and larger mobile devices */
+        .student-login{
+            width: 64%;
+            left: 17%;
+        }
+        #signup {
+            left: 58%;
+            top: 18vh;
+        }
+        button{
+            top: 25vh;
+            left: -36%;
+        }
+      }
+    
+     
+      
+    
