@@ -2,7 +2,11 @@ body{
     background-color: #6427d1;
 }
 
-
+button#login {
+    position: relative;
+    left: 22%;
+    top: 4vh;
+}
 
 form input{
     text-align: center;
@@ -15,9 +19,9 @@ form input{
 }
 button {
     position: relative;
-    top: 15vh;
+    top: 11vh;
     width: 28%;
-    left: 16vh;
+    left: 3vh;
 }
 h2{
     text-align: center;
@@ -44,4 +48,125 @@ form {
     top: 11vh;
     left: 21%;
     border-radius: 35px;
+    height: 68vh;
 }
+@media only screen and (max-width: 767px) {
+    /* CSS rules for mobile devices */
+    .student-login{
+        width: 77%;
+        left: 8%;
+    }
+    #signup {
+        left: 36%;
+        top: 9vh;
+    }
+    button{
+        top: 9vh;
+        left: -1%;
+    }
+}
+ @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* CSS rules for tablets and larger mobile devices */
+    .student-login{
+        width: 64%;
+        left: 17%;
+    }
+    #signup {
+        left: 58%;
+        top: 2vh;
+    }
+    button{
+        top: 10vh;
+        left: 0%;
+    }
+     body{
+    background-color: #6427d1;
+}
+
+button#login {
+    position: relative;
+    left: 22%;
+    top: 4vh;
+}
+
+form input{
+    text-align: center;
+    width: 48%;
+    margin: 2%;
+    position: relative;
+    left: 22%;
+    border-radius: 17px;
+    height: 5vh;
+}
+button {
+    position: relative;
+    top: 11vh;
+    width: 28%;
+    left: 3vh;
+}
+h2{
+    text-align: center;
+}
+
+    #signup {
+        position: relative;
+        left: 56vh;
+        top: 0vh;
+        /* text-decoration: none; */
+    }
+
+    #signup a{
+        text-decoration: none;
+        color :black;
+    }
+    
+
+form {
+    border: 2px solid;
+    background-color: white;
+    width: 51%;
+    position: relative;
+    top: 11vh;
+    left: 21%;
+    border-radius: 35px;
+    height: 68vh;
+}
+@media only screen and (max-width: 767px) {
+    /* CSS rules for mobile devices */
+    .student-login{
+        width: 77%;
+        left: 8%;
+    }
+    #signup {
+        left: 36%;
+        top: 9vh;
+    }
+    button{
+        top: 8vh;
+        left: -18%;
+    }
+}
+ @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* CSS rules for tablets and larger mobile devices */
+    .student-login{
+        width: 64%;
+        left: 17%;
+    }
+    #signup {
+        left: 58%;
+        top: 2vh;
+    }
+    button{
+        top: 9vh;
+        left: -2%;
+    }
+
+  }
+
+ 
+  
+
+  }
+
+ 
+  

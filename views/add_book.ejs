@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/admin_add_book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
  
   <main>
-    <div class="buttons">
-        <button><a href="/admin/admin_details">Admin</a></button>
-        <button><a href="/book/add_book">Add Book</a></button>
-        <button><a href="/book/book_details">Book Details</a></button>
-        <button><a href="/book/book_record">Book Record</a></button>
-        <button><a href="/issue/issue_book">Issue Book</a></button>
-        <button><a href="/issue/issue_book_record">Issue Report</a></button>
-        <button><a href="/admin/sign-out">Logout</a></button>
-
-    </div>
+    <nav>
+        <div class="logo"><i class="fa-solid fa-bars"></i></div>
+         <ul>
+           <li><a href="/admin/admin_details"><i class="fa-solid fa-user"></i></a><span class="nav-item">Admin</span></li>
+           <li><a href="/book/add_book"><i class="fa-solid fa-folder-plus"></i></a><span class="nav-item">Add Book</span></li>
+           <li><a href="/book/book_details"><i class="fa-solid fa-table-list"></i></a><span class="nav-item">Book Record</span></li>
+           <li><a href="/book/book_record"><i class="fa-solid fa-circle-info"></i> </a><span class="nav-item">Book Details</span></li>
+           <li><a href="/issue/issue_book"> <i class="fa-solid fa-book"></i></a><span class="nav-item">Issue Book</span></li>
+           <li><a href="/issue/issue_book_record"><i class="fa-solid fa-list-check"></i></a><span class="nav-item">Issue Book Record</span></li>
+           <li><a href="/admin/sign-out"><i class="fa-solid fa-right-from-bracket"></i></a><span class="nav-item">Logout</span></li>
+         </ul>
+       </nav>
     
     <form action="/book/create" method="POST">
         <h2>Add New Book</h2>

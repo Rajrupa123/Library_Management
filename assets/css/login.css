@@ -1,14 +1,15 @@
 body{
     background-color: #6427d1;
 }
+
 .login{
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-    top: 20vh;
+    top: 19vh;
     height: 50vh;
     width: 89%;
-    left: 6%;
+    left: 5%;
     flex-direction: row;
 }
 
@@ -38,7 +39,7 @@ button {
     position: relative;
     top: 7vh;
     width: 28%;
-    left: -32vh;
+    left: -36vh;
 }
 h2{
     text-align: center;
@@ -46,8 +47,8 @@ h2{
 
     #signup {
         position: relative;
-        left: 56vh;
-        top: 0vh;
+        left: 47vh;
+        top: 1vh;
         /* text-decoration: none; */
     }
 
@@ -63,10 +64,10 @@ h2{
         }
         #signup {
             left: 36%;
-            top: 25vh;
+            top: 9vh;
         }
         button{
-            top: 25vh;
+            top: 8vh;
             left: -18%;
         }
     }
@@ -78,11 +79,11 @@ h2{
         }
         #signup {
             left: 58%;
-            top: 18vh;
+            top: 2vh;
         }
         button{
-            top: 25vh;
-            left: -36%;
+            top: 8vh;
+            left: -37%;
         }
       }
     
