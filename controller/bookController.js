@@ -96,35 +96,53 @@ module.exports.details_book = function(req, res) {
   });
 };
 
-module.exports.create = function(req, res) {
-  console.log(req.body);
+const multer = require('multer');
 
-  getMaxBookId(function(err) {
+// Configure multer for handling file uploads
+const upload = multer({ dest: 'public/images/' });
+
+// ...
+
+module.exports.create = function(req, res, next) {
+  upload.single('book_image')(req, res, function(err) {
     if (err) {
-      console.log("Error while getting max book ID:", err);
+      console.log("Error uploading file:", err);
       return res.status(500).send("Internal Server Error");
     }
 
-    // Increment the book counter
-    bookCounter++;
+    console.log(req.body);
+    console.log(req.file);
 
-    // Generate the book ID in the format BHXXX (e.g., BH001, BH002)
-    const bookId = `BH${bookCounter.toString().padStart(3, '0')}`;
-
-    // Add the generated book ID to the request body
-    req.body.book_id = bookId;
-
-    Book.create(req.body, function(err, newBook) {
+    getMaxBookId(function(err) {
       if (err) {
-        console.log(err);
-        console.log("Error while creating book:");
-        return;
+        console.log("Error while getting max book ID:", err);
+        return res.status(500).send("Internal Server Error");
       }
-      console.log("New Book:", newBook);
-      return res.redirect("/book/book_record");
+
+      // Increment the book counter
+      bookCounter++;
+
+      // Generate the book ID in the format BHXXX (e.g., BH001, BH002)
+      const bookId = `BH${bookCounter.toString().padStart(3, '0')}`;
+
+      // Add the generated book ID and image path to the request body
+      req.body.book_id = bookId;
+      req.body.book_image = req.file.filename;
+
+      Book.create(req.body, function(err, newBook) {
+        if (err) {
+          console.log(err);
+          console.log("Error while creating book:");
+          return;
+        }
+        console.log("New Book:", newBook);
+        return res.redirect("/book/book_record");
+      });
     });
   });
 };
+
+
 
 module.exports.delete_book = function(req, res) {
   let id = req.query.id;

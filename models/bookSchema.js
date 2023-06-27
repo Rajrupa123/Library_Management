@@ -22,6 +22,10 @@ const bookSchema = new mongoose.Schema({
   book_price: {
     type: String,
     required: true,
+  },
+  book_image: {
+    type: String,
+    required: true
   }
 });
 

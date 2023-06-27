@@ -24,7 +24,7 @@
          </ul>
        </nav>
     
-    <form action="/book/create" method="POST">
+    <form action="/book/create" method="POST" enctype="multipart/form-data">
         <h2>Add New Book</h2>
        
         <label for="book_name">Book Name
@@ -39,6 +39,8 @@
         <label for="book_price">Book Price
             <input type="text" name="book_price" id="book_price">
         </label>
+        <label for="book_image">Book Image</label>
+        <input type="file" name="book_image" id="book_image">
       
         <button type="submit">Submit</button>
     </form>
