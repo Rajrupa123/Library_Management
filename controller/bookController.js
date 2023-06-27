@@ -36,6 +36,7 @@ module.exports.record = function(req, res) {
   });
 };
 
+/*
 module.exports.search = function(req, res) {
   const query = req.query.q; // Get the search query from the URL query string
 
@@ -50,7 +51,32 @@ module.exports.search = function(req, res) {
       books: books
     });
   });
+};*/
+
+module.exports.search = function(req, res) {
+  const query = req.query.q; // Get the search query from the URL query string
+  const regex = new RegExp(query, 'i'); // Create a case-insensitive regular expression
+
+  Book.find({ 
+    $or: [
+      { book_name: { $regex: regex } }, // Match book name
+      { book_author: { $regex: regex } }, // Match book author
+      { book_publisher: { $regex: regex } } // Match book publisher
+    ]
+  }, function(err, books) {
+    if (err) {
+      console.log("Error while searching books:", err);
+      return res.status(500).send("Internal Server Error");
+    }
+
+    return res.render("search", {
+      query: query,
+      books: books
+    });
+  });
 };
+
+
 
 module.exports.details_book = function(req, res) {
   const bookId = req.params.book_id; // Get the bookId from the URL parameter
