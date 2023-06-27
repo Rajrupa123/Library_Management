@@ -86,9 +86,4 @@ nav:hover{
 width: 250px;
 transition: all 0.5s ease;
 }
-.book-details img{
-width:35%;
-position:relative;
-top:2vh;
-left:52%
-}
+.book-details img{width:35%;position:relative;top:2vh;left:52%;height: 38vh;}
