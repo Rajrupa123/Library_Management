@@ -48,7 +48,7 @@ h2{
 
     #signup {
         position: relative;
-        left: -25vh;
+        left: -28%;
         top: 9vh;
         /* text-decoration: none; */
         width: 47%;
@@ -67,8 +67,8 @@ h2{
             left: 17%;
         }
         #signup {
-            left: 58%;
-            top: 2vh;
+            left: -28%;
+            top: 8vh;
         }
         button{
             top: 8vh;
@@ -83,8 +83,8 @@ h2{
             left: 17%;
         }
         #signup {
-            left: 58%;
-            top: 2vh;
+            left: -29%;
+            top: 7vh;
         }
         button{
             top: 8vh;
@@ -98,8 +98,8 @@ h2{
             left: 8%;
         }
         #signup {
-            left: 36%;
-            top: 9vh;
+            left: 25%;
+            top: 4vh;
         }
         button{
             top: 8vh;
