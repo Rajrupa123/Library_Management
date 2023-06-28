@@ -88,8 +88,8 @@ form {
 
 button#login {
     position: relative;
-    left: 22%;
-    top: 4vh;
+    left: -26%;
+    top: 10vh;
 }
 
 form input{

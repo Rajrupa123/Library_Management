@@ -60,22 +60,7 @@ h2{
         text-decoration: none;
         color :black;
     }
-    @media only screen and (max-width: 767px) {
-        /* CSS rules for mobile devices */
-        .student-login{
-            width: 77%;
-            left: 8%;
-        }
-        #signup {
-            left: 36%;
-            top: 9vh;
-        }
-        button{
-            top: 8vh;
-            left: -18%;
-        }
-    }
-     @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    @media screen and (max-width:924px) and (min-width:769px) {
         /* CSS rules for tablets and larger mobile devices */
         .student-login{
             width: 64%;
@@ -90,7 +75,40 @@ h2{
             left: -37%;
         }
       }
+
+      @media screen and (max-width:768px) and (min-width:481px) {
+        /* CSS rules for tablets and larger mobile devices */
+        .student-login{
+            width: 64%;
+            left: 17%;
+        }
+        #signup {
+            left: 58%;
+            top: 2vh;
+        }
+        button{
+            top: 8vh;
+            left: -37%;
+        }
+      }
+    @media screen and (max-width:480px) and (min-width:320px) {
+        /* CSS rules for mobile devices */
+        .student-login{
+            width: 77%;
+            left: 8%;
+        }
+        #signup {
+            left: 36%;
+            top: 9vh;
+        }
+        button{
+            top: 8vh;
+            left: -18%;
+        }
+    }
+   
     
+     
      
       
     h1{
