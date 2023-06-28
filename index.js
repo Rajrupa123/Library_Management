@@ -15,6 +15,7 @@ const MongoStore = require('connect-mongo')(session);
 app.use(express.urlencoded());
 
 app.use(cookieParser());
+app.use(express.static("public"));
 
 app.use(express.static('./assets'));
 
