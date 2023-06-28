@@ -15,11 +15,11 @@
             <div class="admin-signup">
                 <form action="/admin/create" method="POST">
                     <h2>Admin Signup</h2>
-                    <input type="text" name="name" id="name" placeholder="Enter name">
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
-                    <input type="password" name="password" id="password" placeholder="Enter password">
-                    <input type="text" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
-                    <button type="submit">Submit</button>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    <input type="submit" value="Sign Up">
                     <button id="login"><a href="/admin/login">Login</a></button>
                 </form>
             </div>

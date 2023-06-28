@@ -1,3 +1,4 @@
+
 const express=require("express");
 const router=express.Router();
 const passport = require("passport");
@@ -12,12 +13,15 @@ router.post("/create-session",passport.authenticate(
     "local",
     { failureRedirect: '/admin/login' },
     ),adminController.createSession);
-    
-router.get('/sign-out', adminController.destroySession);
-router.get('/admin', (req, res) => {
-    const admin = { name: 'John Doe' }; // replace with your actual admin object
-    res.render('admin', { admin });
+
+
+router.get("/sign-out", function(req, res, next) {
+    req.logout(function(err) {
+      if (err) {
+        return next(err);
+      }
+      res.redirect("/");
+    });
   });
 
-
-module.exports=router;
+module.exports = router;

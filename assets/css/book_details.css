@@ -19,12 +19,12 @@ h2{
   width:50%;
   left: 28%;
   background-color: white;
-  height: 52vh;
+  height: 69vh;
 }
 
 .main-details{
   position: relative;
-  top: -130vh;
+  top: -149vh;
   left: 30%;
   font-size: 3vh;
   font-family: sans-serif;
@@ -50,6 +50,7 @@ nav{
   transition:width 0.2s linear;
   background: white;
   box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+  z-index: 999;
 }
 
 .logo{
@@ -86,4 +87,4 @@ nav:hover{
 width: 250px;
 transition: all 0.5s ease;
 }
-.book-details img{width:35%;position:relative;top:2vh;left:52%;height: 38vh;}
+.book-details img{width:35%;position:relative;top: 22vh;left: 29%;height: 38vh;}

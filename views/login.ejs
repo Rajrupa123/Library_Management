@@ -13,12 +13,9 @@
         <div class="login">
             <div class="student-login">
             <form action="/admin/create-session" method="POST">
-                <h2>Admin login</h2>
-                <input type="text" name="name" id="name" placeholder="Enter name">
-                <input type="email" name="email" id="email" placeholder="Enter your email">
-                <input type="password" name="password" id="password" placeholder="Enter password">
-                
-                <button type="submit">Login</button>
+                <input type="email" name="email" placeholder="Email"  required>
+                <input type="password" name="password" placeholder="Password"  required>
+                <input type="submit" value="Log In">
                 <button type="submit" id="signup"><a href="/admin/signup">Signup</a></button>
             </form>
             </div>
