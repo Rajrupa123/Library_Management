@@ -48,7 +48,7 @@ h2{
 
     #signup {
         position: relative;
-        left: -20vh;
+        left: -25vh;
         top: 9vh;
         /* text-decoration: none; */
         width: 47%;
@@ -93,4 +93,6 @@ h2{
     
      
       
-    
+    h1{
+        text-align: center;
+    }

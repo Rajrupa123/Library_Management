@@ -1,24 +1,24 @@
 *{
-    margin: 0;
+  margin: 0;
 }
 header{
-    background-color: black;
-    color: white;
-    height: 12vh;
+  background-color: black;
+  color: white;
+  height: 12vh;
 }
 body{
-    background-image: url(../Images/lib3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* overflow: hidden; */
-    background-blend-mode: darken;
+  background-image: url(../Images/lib3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* overflow: hidden; */
+  background-blend-mode: darken;
 }
 main h1{
-    color: #e8eaf6;
-    position: relative;
-    top: 36vh;
-    left: 23%;
-    font-size: 7vh;
+  color: #e8eaf6;
+  position: relative;
+  top: 36vh;
+  left: 23%;
+  font-size: 7vh;
 }
 #student-login{
 
@@ -39,117 +39,117 @@ color: white;
 
 
 #admin-login{
-    
+  
 position: relative;
-    
+  
 top: 54vh;
-    
+  
 left: 10%;
-    
+  
 background-color: #1565c0;
-    
+  
 color: white;
-    
+  
 width: 17%;
-    
+  
 height: 7vh;
 }
 #head{
-    position: relative;
-    left: 36%;
-    top: 30vh;
-    width: 27%;
-    height: 12vh;
-    border-radius: 42px;
+  position: relative;
+  left: 36%;
+  top: 30vh;
+  width: 27%;
+  height: 12vh;
+  border-radius: 42px;
 }
 #login{
-    
+  
 position: relative;
-    
+  
 top: 3vh;
-    
+  
 /* left: 43%; */
-    
+  
 display: flex;
-    
+  
 justify-content: flex-end;
-    
+  
 /* margin-top: 0vh; */
 }
 label{
-    position: relative;
-    top: 3vh;
-    left: -1%;
+  position: relative;
+  top: 3vh;
+  left: -1%;
 
 }
 button#admin-login a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 @media only screen and (max-width: 767px) {
-    /* CSS rules for mobile devices */
-  body{
-    background-size: 100% 100vh;
-  }
-  #head{
-    width: 47%;
-    left: 29%;
-  }
-  button#admin-login{
-    position: relative;
-    left: -8vh;
-    width: 33%;
-  }
-  label{
-    left: -22%;
-  }
-  #login{
-    left: -18%;
-  }
-  }
+  /* CSS rules for mobile devices */
+body{
+  background-size: 100% 100vh;
+}
+#head{
+  width: 47%;
+  left: 29%;
+}
+button#admin-login{
+  position: relative;
+  left: -8vh;
+  width: 33%;
+}
+label{
+  left: -22%;
+}
+#login{
+  left: -18%;
+}
+}
 
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* CSS rules for tablets and larger mobile devices */
-    body{
-    background-size: 100% 100vh;
-  }
-  #head{
-    width: 47%;
-    left: 29%;
-  }
-  button#admin-login{
-    position: relative;
-    left: -17vh;
-    width: 33%;
-  }
-  label{
-    left: -26%;
-  }
-  #login{
-    left: -23%;
-  }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    /* CSS rules for laptops and desktops */
-     body{
-    background-size: 100% 100vh;
-  }
-  #head{
-    width: 47%;
-    left: 29%;
-  }
-  button#admin-login{
-    position: relative;
-    left: -17vh;
-    width: 33%;
-  }
-  label{
-    left: -26%;
-  }
-  #login{
-    left: -23%;
-  }
-  }
-  
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* CSS rules for tablets and larger mobile devices */
+  body{
+  background-size: 100% 100vh;
+}
+#head{
+  width: 47%;
+  left: 29%;
+}
+button#admin-login{
+  position: relative;
+  left: -17vh;
+  width: 33%;
+}
+label{
+  left: -26%;
+}
+#login{
+  left: -23%;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+  /* CSS rules for laptops and desktops */
+   body{
+  background-size: 100% 100vh;
+}
+#head{
+  width: 47%;
+  left: 29%;
+}
+button#admin-login{
+  position: relative;
+  left: -21vh;
+  width: 33%;
+}
+label{
+  left: -26%;
+}
+#login{
+  left: -23%;
+}
+}
+
 

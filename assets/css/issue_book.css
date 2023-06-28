@@ -1,97 +1,98 @@
 body{
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    background-image: url(../Images/R\ \(1\).jfif);
-    /*background-image: linear-gradient(125deg, black, navy);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url(../Images/R\ \(1\).jfif);
+  /*background-image: linear-gradient(125deg, black, navy);*/
 }
 
 
 form{
-    border: 2px solid;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: -98vh;
-    width: 57%;
-    left: 31%;
-    height: 50vh;
-    background-color: white;
-    border-radius: 32px;
+  border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -95vh;
+  width: 57%;
+  left: 31%;
+  height: 50vh;
+  background-color: white;
+  border-radius: 32px;
+  /* top: -1vh; */
 }
 label{
-    margin: 3vh;
+  margin: 3vh;
 }
 form button{
-    width: 20%;
-    position: relative;
-    left: 34%;
+  width: 20%;
+  position: relative;
+  left: 34%;
 }
 h2{
-    text-align: center;
-    position: relative;
-    top: -97vh;
-    left: 5%;
-    color: white;
+  text-align: center;
+  position: relative;
+  top: -97vh;
+  left: 5%;
+  color: white;
 }
 *{
-    margin: 0%;
-    padding: 0;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
-  }
-  
-  nav{
-    /* position: absolute; */
-    position: relative;
-    top: 0;
-    bottom: 0;
-    height: 100vh;
-    left: 0;
-    width: 90px;
-    overflow: hidden;
-    transition:width 0.2s linear;
-    background: white;
-    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
-    z-index: 999;
-  }
-  
-  .logo{
-    position: relative;
-    left: 14%;
-    display: flex;
-    transition: all 0.5s ease;
-    
-  }
-  a{
-    position: relative;
-    color:red;
-    font-size: 14px;
-    display: table;
-    width: 300px;
-    padding: 10px;
-  }
-  .fa-solid{
-    position: relative;
-    width: 70px;
-    height: 40px;
-    top: 14px;
-    font-size: 20px;
-    text-align: center;
-  }
-  .nav-item{
-    position: relative;
-    top: -6vh;
-    margin-left: 17vh;
-    white-space: nowrap;
-  }
-  
-  nav:hover{
-  width: 250px;
+  margin: 0%;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav{
+  /* position: absolute; */
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  overflow: hidden;
+  transition:width 0.2s linear;
+  background: white;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.logo{
+  position: relative;
+  left: 14%;
+  display: flex;
   transition: all 0.5s ease;
-  }
-  input{
-      border: 2px solid black;
-  }
+  
+}
+a{
+  position: relative;
+  color:red;
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+.fa-solid{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: -6vh;
+  margin-left: 17vh;
+  white-space: nowrap;
+}
+
+nav:hover{
+width: 250px;
+transition: all 0.5s ease;
+}
+input{
+    border: 2px solid black;
+}
