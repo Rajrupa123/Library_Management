@@ -34,6 +34,7 @@ form input{
     left: 22%;
     border-radius: 17px;
     height: 5vh;
+    top: 0vh;
 }
 button {
     position: relative;
@@ -47,9 +48,12 @@ h2{
 
     #signup {
         position: relative;
-        left: 47vh;
-        top: 1vh;
+        left: -20vh;
+        top: 9vh;
         /* text-decoration: none; */
+        width: 47%;
+        height: 5vh;
+        border-radius: 44px;
     }
 
     #signup a{

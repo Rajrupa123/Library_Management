@@ -4,8 +4,11 @@ body{
 
 button#login {
     position: relative;
-    left: 22%;
-    top: 4vh;
+    left: -28%;
+    top: 8vh;
+    width: 46%;
+    height: 5vh;
+    border-radius: 44px;
 }
 
 form input{
