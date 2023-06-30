@@ -1,5 +1,4 @@
 // config/db.js
-
 const mongoose = require("mongoose");
 
 let isConnected = false;
@@ -11,7 +10,7 @@ const connectToDatabase = async () => {
   }
 
   try {
-    await mongoose.connect("mongodb://localhost/library_db", {
+    await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
