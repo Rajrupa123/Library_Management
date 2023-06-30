@@ -8,22 +8,8 @@ const db = require('./config/mongoose');
 const session = require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
-const { default: mongoose } = require('mongoose');
 const MongoStore = require('connect-mongo')(session);
-require("dotenv").config();
-mongoose.set("strictQuery",false)
 
-const connectDB=async()=>{
-    try{
-const conn=await mongoose.connect(process.env.MONGO_URI)
-console.log(`Mongodb Connected:${conn.connection.host}`)
-    }
-    catch(error){
-        console.log(error);
-        process.exit(1)
-
-    }
-}
 
 
 
