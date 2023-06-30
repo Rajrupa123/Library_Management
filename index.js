@@ -9,7 +9,7 @@ const db = require("./config/mongoose"); // Import the db variable
 require('dotenv').config();
 
 
-const port = process.env.PORT;
+const port = process.env.PORT ||8000;
 const mongodbURI = process.env.MONGODB_URI;
 const secretKey = process.env.SECRET_KEY;
 
