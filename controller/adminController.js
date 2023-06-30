@@ -30,20 +30,19 @@ module.exports.admin_details=function name(req,res) {
 
 
 module.exports.create = function(req, res) {
-    if (req.body.password !== req.body.confirm_password) {
+  if (req.body.password !== req.body.confirm_password) {
+    return res.redirect('back');
+  }
+
+  Admin.create(req.body, function(err, user) {
+    if (err) {
+      console.log('Error in creating user while signing up', err);
       return res.redirect('back');
     }
-  
-    Admin.create(req.body, function(err, user) {
-      if (err) {
-        console.log('Error in creating user while signing up', err);
-        return res.redirect('back');
-      }
-  
-      return res.redirect('/admin/login');
-    });
-  };
-  
+
+    return res.redirect('/admin/login');
+  });
+};
 
   
 
@@ -61,5 +60,3 @@ module.exports.createSession = function (req, res, next) {
     res.redirect('/');
   
 }
-
-  
