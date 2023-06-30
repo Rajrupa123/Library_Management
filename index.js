@@ -1,7 +1,9 @@
 const express = require('express');
+// index.js
+
 const cookieParser = require('cookie-parser');
 const app = express();
-const port =8000;
+//const port=8000;
 
 const db = require('./config/mongoose');
 // used for session cookie
@@ -9,6 +11,25 @@ const session = require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 const MongoStore = require('connect-mongo')(session);
+const connectDB=require("./config/mongoose")
+
+const port = process.env.PORT || 8000;
+const mongodbURI = process.env.MONGODB_URI;
+const secretKey = process.env.SECRET_KEY;
+// index.js
+
+const mongoose = require('mongoose');
+require('dotenv').config(); // Load environment variables from .env file
+
+// index.js
+
+
+const { connectToDatabase } = require("./config/db");
+
+// Call the function to connect to MongoDB
+connectToDatabase();
+
+// ... Rest of your code ...
 
 
 
